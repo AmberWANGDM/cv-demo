@@ -10,7 +10,22 @@
 </head>
 
 <body>
-  <div id="demo"></div>
+  <style id="style"></style>
+  <div id="html"></div>
+  <div id="div1" style="position: fixed;right:20px;top:20px"></div>
+  <style>
+    #div1::before {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+
+    #div1::after {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+  </style>
   <script src="main.js"></script>
 </body>
 
